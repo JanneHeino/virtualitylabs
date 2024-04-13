@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/virtualitylabs/backend/kuva_app/.vs/kuva_app/FileContentIndex/ba9620af-982a-4990-802b-5609210bb66a.vsidx
+.vs/
+.vs

@@ -1,0 +1,46 @@
+/* Footer.css */
+.footer {
+    background-color: #000; /* Footerin taustaväri */
+    color: white; /* Tekstin väri */
+    padding: 20px 0; /* Ylä- ja alamarginaali */
+  }
+  
+  .footer-logo {
+    max-width: 150px; /* Logo kuvan leveys */
+    margin-bottom: 10px; /* Logo kuvan marginaali */
+  }
+  
+  .footer-logo-column,
+  .footer-about-column,
+  .footer-social-column {
+    margin-bottom: 20px;
+  }
+  
+  .footer-about h4,
+  .footer-social h4 {
+    margin-bottom: 10px;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: white; /* Sosiaalisen median linkkien väri */
+  }
+  
+  .social-link:hover {
+    color: #ccc; /* Sosiaalisen median linkkien hover-väri */
+  }
+  
+  .footer-bottom-column {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-logo-column,
+    .footer-about-column,
+    .footer-social-column {
+      text-align: center;
+    }
+  }
+  

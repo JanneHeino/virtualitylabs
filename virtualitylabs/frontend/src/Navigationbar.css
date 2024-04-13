@@ -1,0 +1,39 @@
+/* Navigationbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    background-color: #000; /* Musta taustaväri */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff; /* Adjust the color to fit your design */
+    text-decoration: none; /* This removes the underline */
+}
+
+.nav-link {
+    margin-right: 1rem; /* Adjust spacing between links */
+}
+.navbar.bg-dark {
+    background-color: #000 !important; /* Musta taustaväri */
+}
+.nav-link:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+
+.navbar-brand img {
+    height: 90px; /* aseta tämä arvo korkeammaksi halutun koon mukaan */
+    width: auto; /* säilytä tämä auto, jotta kuvasuhde pysyy oikeana */
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+}
+

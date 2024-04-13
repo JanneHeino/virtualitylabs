@@ -1,0 +1,13 @@
+trigger:
+- virtualitylabs
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: vercel-deployment-task@1
+  inputs:
+    vercelProjectId: 'prj_98sTr6Sx9mYnhigu4PTmPyWn8XDk' # Example Vercel Project ID
+    vercelOrgId: '9Jbdp0AWi770A3NprAKbYCps' # Example Vercel Personal Account ID
+    vercelToken: $(VERCEL_TOKEN)
+    production: true

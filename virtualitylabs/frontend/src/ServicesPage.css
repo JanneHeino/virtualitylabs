@@ -1,0 +1,92 @@
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+
+  
+
+}
+.services-title {
+  /*margin-top: 20px; */ 
+  font-size: 60px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 100px;
+ 
+}
+
+.service-text1 {
+  flex: 1;
+  padding-right: 220px;
+  text-align: left;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  height: 370px;
+  padding: 20px;
+  margin: 20px 0;
+  margin-right: 30px;
+  border: 2px solid rgb(116, 114, 114);
+  width: 560px;
+  line-height: 1.4;
+  background-color: rgb(12, 12, 12);
+}
+.service-text2 {
+  flex: 1;
+  padding-left: 220px;
+  text-align: left;
+  border-radius: 25px;
+  height: 370px;
+  padding: 20px;
+  margin: 20px 0;
+  margin-left: 30px;
+  border: 2px solid rgb(116, 114, 114);
+  width: 560px;
+  line-height: 1.4;
+  background-color: rgb(12, 12, 12);
+}
+
+.service-text3 {
+  flex: 1;
+  padding-right: 220px;
+  text-align: left;
+  border-radius: 25px;
+  height: 370px;
+  padding: 20px;
+  margin: 20px 0;
+  margin-right: 30px;
+  border: 2px solid rgb(116, 114, 114);
+  width: 560px;
+  line-height: 1.4;
+  background-color: rgb(12, 12, 12);
+}
+
+
+.service-item.reverse-item {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  height: 370px;
+  width: 560px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Käänteinen järjestys vain videotuotanto-osiolle */
+  .service-item.reverse-item {
+    flex-direction: column-reverse;
+  }
+
+}

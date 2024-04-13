@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13e15dbd.css",
+    "main.js": "/static/js/main.a9d8768c.js",
+    "static/js/787.8d845a8c.chunk.js": "/static/js/787.8d845a8c.chunk.js",
+    "static/media/lyseo.PNG": "/static/media/lyseo.b28e5408f691bfb1e7c6.PNG",
+    "static/media/Virtuality Labs Logo Icon Dark.png": "/static/media/Virtuality Labs Logo Icon Dark.d47f26f2bb715f95b985.png",
+    "static/media/valokuvaus.jpg": "/static/media/valokuvaus.169eb222b420e17b8908.jpg",
+    "static/media/videotuotanto.jpg": "/static/media/videotuotanto.43b40aa59649fa8feec5.jpg",
+    "static/media/ryhmäkuvaTEMP.jpg": "/static/media/ryhmäkuvaTEMP.1f636b2b28115c02635a.jpg",
+    "static/media/testi.jpg": "/static/media/testi.42e10100180e5d26ce0a.jpg",
+    "static/media/työntekijä1.jpg": "/static/media/työntekijä1.dfc4e987390840644010.jpg",
+    "static/media/työntekijä2.jpg": "/static/media/työntekijä2.8b0573fa90f07e180bb8.jpg",
+    "static/media/työntekijä3.jpg": "/static/media/työntekijä3.fd36c08b4addd4d3c679.jpg",
+    "index.html": "/index.html",
+    "main.13e15dbd.css.map": "/static/css/main.13e15dbd.css.map",
+    "main.a9d8768c.js.map": "/static/js/main.a9d8768c.js.map",
+    "787.8d845a8c.chunk.js.map": "/static/js/787.8d845a8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13e15dbd.css",
+    "static/js/main.a9d8768c.js"
+  ]
+}

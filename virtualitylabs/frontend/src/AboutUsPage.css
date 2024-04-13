@@ -1,0 +1,60 @@
+.company-description {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+.page-title {
+  text-align: center;
+  font-size: 60px;
+  padding: 20px;
+}
+
+.group-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.group-image-container img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.employee-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.employee {
+  position: relative;
+  width: 20%;
+  margin: 20px;
+  margin-bottom: 40px; /* etäisyys footeriin */
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* pyörentää reunat */
+}
+
+.employee-details {
+  margin-top: 10px;
+}
+
+.employee-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.employee-details p {
+  font-size: 1em;
+  white-space: normal;
+  text-align: center;
+}
