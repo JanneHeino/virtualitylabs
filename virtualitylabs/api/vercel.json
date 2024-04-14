@@ -1,13 +1,8 @@
 {
-    "version": 2,
-    "builds": [{
-      "src": "sendemail.js",
-      "use": "@now/node"
-    }],
-    "routes": [{
-      "src": "/(.*)",
-      "dest": "sendemail.js"
-    }]
-  }
-
-  
+  "version": 2,
+  "routes": [
+    { "src": "/api/images", "dest": "/api/images.js" },
+    { "src": "/api/sendEmail", "dest": "/api/sendEmail.js" },
+    { "src": "/api/(.*)", "dest": "/api/otherRoutes.js" }
+  ]
+}
