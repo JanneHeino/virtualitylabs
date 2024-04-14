@@ -5,7 +5,7 @@
     "use": "@now/node"
   }],
   "rewrites": [
-    {"src": "/(.*)","dest": "sendemail.js"},
-    {"src": "virtualitylabs-server.vercel.app/api/sendEmail","dest":"sendemail.js"}
+    {"source": "/(.*)","destination": "sendemail.js"},
+    {"source": "virtualitylabs-server.vercel.app/api/sendEmail","destination":"sendemail.js"}
   ]
 }
