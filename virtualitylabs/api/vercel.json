@@ -4,8 +4,8 @@
     "src": "sendemail.js",
     "use": "@now/node"
   }],
-  "rewrites": [
-    {"source": "/(.*)","destination": "sendemail.js"},
-    {"source": "virtualitylabs-server.vercel.app/api/sendEmail","destination":"sendemail.js"}
+  "routes": [
+    {"src": "/(.*)","dest": "sendemail.js", "continue": true},
+    {"src": "virtualitylabs-server.vercel.app/api/sendEmail","dest":"sendemail.js"}
   ]
 }
