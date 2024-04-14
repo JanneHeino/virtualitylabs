@@ -29,12 +29,23 @@ app.use(cors);
 
 
 
-const router = express.Router();
+//const router = express.Router();
 
 
+app.get('/api/images', (req, res) => {
+    const sql = 'SELECT * FROM kuva where valittu = 1';
+    db.query(sql, (err, results) => {
+      if (err) throw err;
+     
+      const images = results.map(image => {
+        return Buffer.from(image.image).toString('base64');
+      });
+      res.json(images);
+    });
+  });
 
 
-router.post('/api/sendEmail', async(req,res) => {
+app.post('/api/sendEmail', async(req,res) => {
     
     console.log("/contact:", req.body);
 
@@ -91,5 +102,11 @@ router.post('/api/sendEmail', async(req,res) => {
       }
 })
 
+const PORT = process.env.PORT || 3001;
 
-module.exports = router
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
+module.exports = app
