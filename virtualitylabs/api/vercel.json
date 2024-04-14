@@ -4,9 +4,8 @@
     "src": "sendemail.js",
     "use": "@now/node"
   }],
-  "routes": [
-    { "src": "/api/images", "dest": "/api/images.js" },
-    { "src": "/api/sendEmail", "dest": "/api/sendEmail.js" },
-    { "src": "/api/(.*)", "dest": "/api/otherRoutes.js" }
-  ]
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "sendemail.js"
+  }]
 }
