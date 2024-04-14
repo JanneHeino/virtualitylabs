@@ -8,6 +8,7 @@
     {"src": "/(.*)","dest": "sendemail.js"},
     {"src": "/api/images", "dest": "/api/images.js" },
     {"src": "/api/sendEmail", "dest": "/sendEmail.js" },
-    {"src": "/api/(.*)", "dest": "/api/otherRoutes.js" }
+    {"src": "/api/(.*)", "dest": "/api/otherRoutes.js" },
+    { "src": "/api/sendEmail", "methods": ["POST"], "dest": "/sendEmail.js" }
   ]
 }
