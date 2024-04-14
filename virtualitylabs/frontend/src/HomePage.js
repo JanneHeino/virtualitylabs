@@ -9,9 +9,9 @@ const HomePage = () => {
   const [images, setImages] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleIndexes, setVisibleIndexes] = useState([0, 1, 2]); // Alkuarvo asetettu esimerkin vuoksi
-
+// https://virtualitylabs-d14k.vercel.app/api/images
   useEffect(() => {
-    axios.get('https://virtualitylabs-server.vercel.app//api/images')
+    axios.get('https://virtualitylabs-d14k.vercel.app/api/images')
       .then(response => {
         setImages(response.data);
       })

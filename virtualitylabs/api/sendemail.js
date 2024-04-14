@@ -25,14 +25,19 @@ var cors = function (req, res, next)
     next();
 }
 
-app.use(cors);
+const corsOptions = {
+    origin: 'https://virtualitylabs-d14k.vercel.app',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
 
 
 
 //const router = express.Router();
 
-
-app.get('https://virtualitylabs-d14k.vercel.app/api/images', (req, res) => {
+//https://virtualitylabs-d14k.vercel.app/api/images
+app.get('/api/images', (req, res) => {
     const sql = 'SELECT * FROM kuva where valittu = 1';
     db.query(sql, (err, results) => {
       if (err) throw err;
