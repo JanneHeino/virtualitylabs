@@ -51,7 +51,7 @@ app.get('/api/images', (req, res) => {
   });
 
 
-app.post('api/sendEmail', async(req,res) => {
+app.post('/api/sendEmail', async(req,res) => {
     
     console.log("/contact:", req.body);
 
