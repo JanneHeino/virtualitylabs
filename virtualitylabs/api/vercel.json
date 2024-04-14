@@ -5,7 +5,6 @@
     "use": "@now/node"
   }],
   "routes": [
-    {"src": "/(.*)","dest": "sendemail.js", "continue": true},
-    {"src": "virtualitylabs-server.vercel.app/api/sendEmail","dest":"sendemail.js"}
+    {"src": "/(.*)","dest": "sendemail.js", "continue": true}
   ]
 }
