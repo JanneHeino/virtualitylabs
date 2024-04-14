@@ -6,7 +6,8 @@
   }],
   "routes": [
     {"src": "/(.)","dest": "sendemail.js"},
-    {"src": "/api/images","dest": "/api/images"}, 
-    {"src": "/api/sendEmail", "dest": "/api/sendEmail"}
+    {"src": "/api/images", "dest": "/api/images.js" },
+    {"src": "/api/sendEmail", "dest": "/api/sendEmail.js" },
+    {"src": "/api/(.)", "dest": "/api/otherRoutes.js" }
   ]
 }
