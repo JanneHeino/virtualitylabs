@@ -1,11 +1,12 @@
 {
     "version": 2,
-    "builds": [{
-      "src": "sendemail.js",
-      "use": "@now/node"
-    }],
-    "routes": [{
-      "src": "/(.*)",
-      "dest": "sendemail.js"
-    }]
+    "builds": [
+      { "src": "sendemail.js", "use": "@now/node" }
+    ],
+    "routes": [
+      { "src": "/api/images", "dest": "sendemail.js" },
+      { "src": "/api/sendEmail", "dest": "sendemail.js" },
+      { "src": "/(.*)", "dest": "frontend/$1" }
+    ]
   }
+  
