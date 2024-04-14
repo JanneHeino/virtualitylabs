@@ -74,7 +74,7 @@ app.post('/api/sendEmail', async(req,res) => {
         }
         console.log("Kysely tehty");
     })
-    
+    //jiojoi
     try {
         // Extract form data from request body
         const { name, email, phoneNumber, message } = req.body;
