@@ -88,7 +88,7 @@ app.post('/api/sendEmail', async(req,res) => {
                 pass: 'vgwlepcilwffgdnd'  // Use environment variable for password
             }
         });
-
+/*
         await new Promise((resolve, reject) => {
             // verify connection configuration
             transporter.verify(function (error, success) {
@@ -101,7 +101,7 @@ app.post('/api/sendEmail', async(req,res) => {
                 }
             });
         });
-    
+    */
         // Email options
         const mailOptions = {
             from: 'labsvirtuality@gmail.com',
@@ -109,7 +109,7 @@ app.post('/api/sendEmail', async(req,res) => {
             subject: 'Contact Message',
             text:  `Name: ${name}\nEmail: ${email}\nPhone: ${phoneNumber}\nMessage: ${message}`
         };
-    
+    /*
         // Send mail
         await new Promise((resolve, reject) => {
             // send mail
@@ -122,8 +122,8 @@ app.post('/api/sendEmail', async(req,res) => {
                     resolve(info);
                 }
             });
-        });
-        //await transporter.sendMail(mailOptions);
+        });*/
+        await transporter.sendMail(mailOptions);
     
         // Sending response
         //res.status(200).json({ message: 'Email sent successfully' });
