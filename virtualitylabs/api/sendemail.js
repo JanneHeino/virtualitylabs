@@ -88,6 +88,19 @@ app.post('/api/sendEmail', async(req,res) => {
                 pass: 'vgwlepcilwffgdnd'  // Use environment variable for password
             }
         });
+
+        await new Promise((resolve, reject) => {
+            // verify connection configuration
+            transporter.verify(function (error, success) {
+                if (error) {
+                    console.log(error);
+                    reject(error);
+                } else {
+                    console.log("Server is ready to take our messages");
+                    resolve(success);
+                }
+            });
+        });
     
         // Email options
         const mailOptions = {
@@ -98,7 +111,19 @@ app.post('/api/sendEmail', async(req,res) => {
         };
     
         // Send mail
-        await transporter.sendMail(mailOptions);
+        await new Promise((resolve, reject) => {
+            // send mail
+            transporter.sendMail(mailData, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }
+            });
+        });
+        //await transporter.sendMail(mailOptions);
     
         // Sending response
         //res.status(200).json({ message: 'Email sent successfully' });
