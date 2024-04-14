@@ -74,7 +74,7 @@ app.post('/api/sendEmail', async(req,res) => {
         }
         console.log("Kysely tehty");
     })
-    //jiojoi
+    
     try {
         // Extract form data from request body
         const { name, email, phoneNumber, message } = req.body;
@@ -88,20 +88,7 @@ app.post('/api/sendEmail', async(req,res) => {
                 pass: 'vgwlepcilwffgdnd'  // Use environment variable for password
             }
         });
-/*
-        await new Promise((resolve, reject) => {
-            // verify connection configuration
-            transporter.verify(function (error, success) {
-                if (error) {
-                    console.log(error);
-                    reject(error);
-                } else {
-                    console.log("Server is ready to take our messages");
-                    resolve(success);
-                }
-            });
-        });
-    */
+    
         // Email options
         const mailOptions = {
             from: 'labsvirtuality@gmail.com',
@@ -109,20 +96,8 @@ app.post('/api/sendEmail', async(req,res) => {
             subject: 'Contact Message',
             text:  `Name: ${name}\nEmail: ${email}\nPhone: ${phoneNumber}\nMessage: ${message}`
         };
-    /*
+    
         // Send mail
-        await new Promise((resolve, reject) => {
-            // send mail
-            transporter.sendMail(mailData, (err, info) => {
-                if (err) {
-                    console.error(err);
-                    reject(err);
-                } else {
-                    console.log(info);
-                    resolve(info);
-                }
-            });
-        });*/
         await transporter.sendMail(mailOptions);
     
         // Sending response
