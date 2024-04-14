@@ -6,6 +6,6 @@
     }],
     "routes": [{
       "src": "/(.*)",
-      "dest": "sendemail.js"
+      "dest": "/"
     }]
   }
