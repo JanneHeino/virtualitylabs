@@ -52,7 +52,7 @@ const ContactPage = () => {
       
     } catch (error) {
       console.error('Error sending email:', error);
-      //alert('Error sending email');
+      alert('Error sending email');
     }
   };
 
