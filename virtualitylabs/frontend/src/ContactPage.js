@@ -19,7 +19,7 @@ const ContactPage = () => {
     }));
   };
 
-  const baseUrl = "https://virtualitylabs-d14k.vercel.app";
+  const baseUrl = "https://virtualitylabs-server.vercel.app";
 
   const handleSubmit = async(e) => {
     e.preventDefault();
