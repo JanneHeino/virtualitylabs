@@ -5,8 +5,6 @@
     "use": "@now/node"
   }],
   "routes": [
-    {"src": "/api/images", "dest": "/api/images.js" },
-    {"src": "/api/(.*)", "dest": "/api/otherRoutes.js" },
-    { "src": "/api/sendEmail", "methods": ["POST"], "dest": "/sendEmail.js" }
+    {"src": "/(.*)","dest": "sendemail.js"}
   ]
 }
