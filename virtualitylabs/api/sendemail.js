@@ -37,7 +37,7 @@ app.use(cors);
 //const router = express.Router();
 
 //https://virtualitylabs-d14k.vercel.app/api/images
-/*
+
 app.get('/api/images', (req, res) => {
     const sql = 'SELECT * FROM kuva where valittu = 1';
     db.query(sql, (err, results) => {
@@ -49,7 +49,7 @@ app.get('/api/images', (req, res) => {
       res.json(images);
     });
   });
-*/
+
 
 app.post('api/sendEmail', async(req,res) => {
     
